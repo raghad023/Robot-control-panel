@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Control Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Robot Control Panel</h1>
+        <div class="control-panel">
+            <button id="forward" onclick="controlRobot('forward')">Forward</button>
+            <div class="middle-buttons">
+                <button id="left" onclick="controlRobot('left')">Left</button>
+                <button id="stop" onclick="controlRobot('stop')">Stop</button>
+                <button id="right" onclick="controlRobot('right')">Right</button>
+            </div>
+            <button id="backward" onclick="controlRobot('backward')">Backward</button>
+        </div>
+        <div id="lastDirection">Last Direction: Not available</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
