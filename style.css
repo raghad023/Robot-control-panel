@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+.control-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.middle-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:active {
+    background-color: #45a049;
+}
+
+@media (min-width: 600px) {
+    .control-panel {
+        flex-direction: column;
+    }
+    
+    .middle-buttons {
+        display: flex;
+        justify-content: center;
+    }
+}
